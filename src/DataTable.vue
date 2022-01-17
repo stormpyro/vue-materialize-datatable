@@ -37,12 +37,18 @@
         >
           <i class="material-icons">search</i>
         </a>
-        <button type="button" class="btn btn-default" aria-label="Profile">
-          <i class="mdi mdi-account" aria-hidden="true"></i>
-        </button>
+        <a
+          v-if="searchable"
+          href="javascript:undefined"
+          class="waves-effect btn-flat nopadding"
+          @click="search"
+        >
+          <i class="material-icons">search</i>
+        </a>
+
         <button type="button" class="btn btn-default" aria-label="Flask">
           <i class="mdi mdi-flask" aria-hidden="true"></i>
-          btn
+          Button Test
         </button>
       </div>
     </div>
